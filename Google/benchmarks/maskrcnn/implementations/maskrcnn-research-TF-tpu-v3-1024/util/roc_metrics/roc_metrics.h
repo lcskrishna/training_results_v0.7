@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "REDACTEDtypes/span.h"
+//#include "types/span.h"
 #include "third_party/py/numpy/core/include/numpy/arrayobject.h"
 
 namespace rocmetrics {

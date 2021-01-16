@@ -1,0 +1,189 @@
+:::MLL 1610740147.607 cache_clear: {"value": true, "metadata": {"file": "mask_rcnn_main.py", "lineno": 118}}
+I0115 19:49:07.607313 139714919892736 mlp_log.py:82] :::MLL 1610740147.607 cache_clear: {"value": true, "metadata": {"file": "mask_rcnn_main.py", "lineno": 118}}
+:::MLL 1610740147.608 init_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 119}}
+I0115 19:49:07.607900 139714919892736 mlp_log.py:82] :::MLL 1610740147.608 init_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 119}}
+:::MLL 1610740147.608 global_batch_size: {"value": 8, "metadata": {"file": "mask_rcnn_main.py", "lineno": 120}}
+I0115 19:49:07.608398 139714919892736 mlp_log.py:82] :::MLL 1610740147.608 global_batch_size: {"value": 8, "metadata": {"file": "mask_rcnn_main.py", "lineno": 120}}
+:::MLL 1610740147.609 train_samples: {"value": 118287, "metadata": {"file": "mask_rcnn_main.py", "lineno": 121}}
+I0115 19:49:07.608822 139714919892736 mlp_log.py:82] :::MLL 1610740147.609 train_samples: {"value": 118287, "metadata": {"file": "mask_rcnn_main.py", "lineno": 121}}
+:::MLL 1610740147.609 eval_samples: {"value": 5000, "metadata": {"file": "mask_rcnn_main.py", "lineno": 122}}
+I0115 19:49:07.609238 139714919892736 mlp_log.py:82] :::MLL 1610740147.609 eval_samples: {"value": 5000, "metadata": {"file": "mask_rcnn_main.py", "lineno": 122}}
+:::MLL 1610740147.610 min_image_size: {"value": 800, "metadata": {"file": "mask_rcnn_main.py", "lineno": 124}}
+I0115 19:49:07.609623 139714919892736 mlp_log.py:82] :::MLL 1610740147.610 min_image_size: {"value": 800, "metadata": {"file": "mask_rcnn_main.py", "lineno": 124}}
+:::MLL 1610740147.610 max_image_size: {"value": 1333, "metadata": {"file": "mask_rcnn_main.py", "lineno": 126}}
+I0115 19:49:07.610037 139714919892736 mlp_log.py:82] :::MLL 1610740147.610 max_image_size: {"value": 1333, "metadata": {"file": "mask_rcnn_main.py", "lineno": 126}}
+:::MLL 1610740147.610 num_image_candidates: {"value": 1000, "metadata": {"file": "mask_rcnn_main.py", "lineno": 128}}
+I0115 19:49:07.610435 139714919892736 mlp_log.py:82] :::MLL 1610740147.610 num_image_candidates: {"value": 1000, "metadata": {"file": "mask_rcnn_main.py", "lineno": 128}}
+I0115 19:49:08.243274 139714919892736 transport.py:157] Attempting refresh to obtain initial access_token
+INFO:tensorflow:enable_2d_tiling: False
+I0115 19:49:15.532936 139714919892736 device_assignment.py:344] enable_2d_tiling: False
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:417: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0115 19:49:15.598688 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:417: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._prefetch_dataset at 0x7f11bfdaad08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+W0115 19:49:15.621767 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._prefetch_dataset at 0x7f11bfdaad08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._dataset_parser at 0x7f11b5846268> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:15.673804 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._dataset_parser at 0x7f11b5846268> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/object_detection/tf_example_decoder.py:135: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0115 19:49:15.761560 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/object_detection/tf_example_decoder.py:135: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/object_detection/tf_example_decoder.py:146: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0115 19:49:15.778302 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/object_detection/tf_example_decoder.py:146: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:316: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0115 19:49:15.850584 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:316: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:317: The name tf.string_to_number is deprecated. Please use tf.strings.to_number instead.
+
+W0115 19:49:15.851781 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:317: The name tf.string_to_number is deprecated. Please use tf.strings.to_number instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:115: The name tf.image.resize_images is deprecated. Please use tf.image.resize instead.
+
+W0115 19:49:15.921457 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:115: The name tf.image.resize_images is deprecated. Please use tf.image.resize instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:205: calling crop_and_resize_v1 (from tensorflow.python.ops.image_ops_impl) with box_ind is deprecated and will be removed in a future version.
+Instructions for updating:
+box_ind is deprecated, use box_indices instead
+W0115 19:49:16.018394 139714919892736 deprecation.py:506] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/dataloader.py:205: calling crop_and_resize_v1 (from tensorflow.python.ops.image_ops_impl) with box_ind is deprecated and will be removed in a future version.
+Instructions for updating:
+box_ind is deprecated, use box_indices instead
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>.reduce_func at 0x7f11a20182f0> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+W0115 19:49:16.777396 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>.reduce_func at 0x7f11a20182f0> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+WARNING:tensorflow:Entity <bound method InputReader._transform_images of <dataloader.InputReader object at 0x7f11bfe803c8>> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:16.806177 139714919892736 ag_logging.py:146] Entity <bound method InputReader._transform_images of <dataloader.InputReader object at 0x7f11bfe803c8>> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/util/train_and_eval_runner.py:265: DatasetV1.make_initializable_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_initializable_iterator(dataset)`.
+W0115 19:49:16.832799 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/util/train_and_eval_runner.py:265: DatasetV1.make_initializable_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_initializable_iterator(dataset)`.
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._prefetch_dataset at 0x7f11bfdaa950> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+W0115 19:49:16.963341 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._prefetch_dataset at 0x7f11bfdaa950> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._dataset_parser at 0x7f11bfe10d08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:17.001976 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._dataset_parser at 0x7f11bfe10d08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>.horizontal_image at 0x7f11bfdaae18> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:17.270171 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>.horizontal_image at 0x7f11bfdaae18> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._mark_is_padding at 0x7f11bfdaad08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:17.283514 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._mark_is_padding at 0x7f11bfdaad08> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>.vertical_image at 0x7f11bfdaaf28> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+W0115 19:49:17.295872 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>.vertical_image at 0x7f11bfdaaf28> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>._mark_is_not_padding at 0x7f11a1f7e268> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:17.321261 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>._mark_is_not_padding at 0x7f11a1f7e268> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:Entity <function InputReader.__call__.<locals>.reduce_func at 0x7f11a2021a60> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+W0115 19:49:17.342544 139714919892736 ag_logging.py:146] Entity <function InputReader.__call__.<locals>.reduce_func at 0x7f11a2021a60> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: Bad argument number for Name: 3, expecting 4
+WARNING:tensorflow:Entity <bound method InputReader._transform_images of <dataloader.InputReader object at 0x7f11bfe80400>> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+W0115 19:49:17.363496 139714919892736 ag_logging.py:146] Entity <bound method InputReader._transform_images of <dataloader.InputReader object at 0x7f11bfe80400>> could not be transformed and will be executed as-is. Please report this to the AutoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: module 'gast' has no attribute 'Index'
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0115 19:49:17.463244 139714919892736 deprecation.py:506] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+14785
+14785
+8
+loading annotations into memory...
+Done (t=0.72s)
+creating index...
+index created!
+************* 1
+<tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f11bfdd2048>
+:::MLL 1610740157.474 opt_learning_rate_decay_factor: {"value": 0.1, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/lr_policy.py", "lineno": 38}}
+I0115 19:49:17.473634 139714919892736 mlp_log.py:82] :::MLL 1610740157.474 opt_learning_rate_decay_factor: {"value": 0.1, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/lr_policy.py", "lineno": 38}}
+:::MLL 1610740157.475 opt_learning_rate_decay_steps: {"value": [9750, 13000], "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/lr_policy.py", "lineno": 40}}
+I0115 19:49:17.474880 139714919892736 mlp_log.py:82] :::MLL 1610740157.475 opt_learning_rate_decay_steps: {"value": [9750, 13000], "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/lr_policy.py", "lineno": 40}}
+:::MLL 1610740157.487 opt_base_learning_rate: {"value": 0.16, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 117}}
+I0115 19:49:17.487250 139714919892736 mlp_log.py:82] :::MLL 1610740157.487 opt_base_learning_rate: {"value": 0.16, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 117}}
+:::MLL 1610740157.488 opt_learning_rate_warmup_steps: {"value": 1000, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 120}}
+I0115 19:49:17.488385 139714919892736 mlp_log.py:82] :::MLL 1610740157.488 opt_learning_rate_warmup_steps: {"value": 1000, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 120}}
+:::MLL 1610740157.490 opt_learning_rate_warmup_factor: {"value": 0.00016, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 123}}
+I0115 19:49:17.489539 139714919892736 mlp_log.py:82] :::MLL 1610740157.490 opt_learning_rate_warmup_factor: {"value": 0.00016, "metadata": {"file": "/home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_model.py", "lineno": 123}}
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:73: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0115 19:49:17.552709 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:73: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/normalization.py:327: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0115 19:49:17.553416 139714919892736 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/layers/normalization.py:327: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:449: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0115 19:49:17.576406 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:449: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:113: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0115 19:49:17.579417 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/resnet.py:113: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:419: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0115 19:49:19.465335 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:419: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:419: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0115 19:49:19.465621 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:419: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: The name tf.floordiv is deprecated. Please use tf.math.floordiv instead.
+
+W0115 19:49:21.615779 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: The name tf.floordiv is deprecated. Please use tf.math.floordiv instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: The name tf.log is deprecated. Please use tf.math.log instead.
+
+W0115 19:49:21.616089 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0115 19:49:21.616262 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:1417: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:470: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0115 19:49:22.028426 139714919892736 module_wrapper.py:139] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:470: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:531: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0115 19:49:22.066874 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:531: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:631: conv2d_transpose (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2DTranspose` instead.
+W0115 19:49:22.958502 139714919892736 deprecation.py:323] From /home/falcon101_hl/training_results_v0.7/Google/benchmarks/maskrcnn/implementations/maskrcnn-research-TF-tpu-v3-1024/mask_rcnn_architecture.py:631: conv2d_transpose (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2DTranspose` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/util/dispatch.py:180: batch_gather (from tensorflow.python.ops.array_ops) is deprecated and will be removed after 2017-10-25.
+Instructions for updating:
+`tf.batch_gather` is deprecated, please use `tf.gather` with `batch_dims=-1` instead.
+W0115 19:49:47.344672 139714919892736 deprecation.py:323] From /usr/local/lib/python3.5/dist-packages/tensorflow_core/python/util/dispatch.py:180: batch_gather (from tensorflow.python.ops.array_ops) is deprecated and will be removed after 2017-10-25.
+Instructions for updating:
+`tf.batch_gather` is deprecated, please use `tf.gather` with `batch_dims=-1` instead.
+INFO:tensorflow:{'image_info': <tf.Tensor 'Slice:0' shape=(1, 5) dtype=float32>, 'is_padded': <tf.Tensor 'Slice_2:0' shape=(1, 1) dtype=bool>, 'images': <tf.Tensor 'Slice_1:0' shape=(279552, 1, 12) dtype=bfloat16>, 'source_ids': <tf.Tensor 'Slice_3:0' shape=(1,) dtype=float32>}
+I0115 19:49:53.014061 139714919892736 mask_rcnn_model.py:290] {'image_info': <tf.Tensor 'Slice:0' shape=(1, 5) dtype=float32>, 'is_padded': <tf.Tensor 'Slice_2:0' shape=(1, 1) dtype=bool>, 'images': <tf.Tensor 'Slice_1:0' shape=(279552, 1, 12) dtype=bfloat16>, 'source_ids': <tf.Tensor 'Slice_3:0' shape=(1,) dtype=float32>}
+INFO: Entering the init function.
+:::MLL 1610740519.755 init_stop: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 168}}
+I0115 19:55:19.755030 139714919892736 mlp_log.py:82] :::MLL 1610740519.755 init_stop: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 168}}
+:::MLL 1610740519.756 run_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 169}}
+I0115 19:55:19.755796 139714919892736 mlp_log.py:82] :::MLL 1610740519.756 run_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "lineno": 169}}
+:::MLL 1610740519.758 block_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "first_epoch_num": 0, "epoch_count": 1, "lineno": 180}}
+I0115 19:55:19.757600 139714919892736 mlp_log.py:82] :::MLL 1610740519.758 block_start: {"value": null, "metadata": {"file": "mask_rcnn_main.py", "first_epoch_num": 0, "epoch_count": 1, "lineno": 180}}

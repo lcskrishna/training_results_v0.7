@@ -17,8 +17,11 @@
 import numpy as np
 import tensorflow.compat.v1 as tf
 
-from REDACTED.tensorflow.python.tpu.ops import tpu_ops
-from REDACTED.tensorflow.python.training import moving_averages
+#from REDACTED.tensorflow.python.tpu.ops import tpu_ops
+#from REDACTED.tensorflow.python.training import moving_averages
+
+from tensorflow.python.tpu.ops import tpu_ops
+from tensorflow.python.training import moving_averages
 
 
 def linear_2d(m, n):

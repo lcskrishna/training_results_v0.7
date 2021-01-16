@@ -20,7 +20,8 @@ This is originally implemented in TensorFlow Object Detection API.
 
 import tensorflow.compat.v1 as tf
 
-from REDACTED.mask_rcnn.object_detection import shape_utils
+#from REDACTED.mask_rcnn.object_detection import shape_utils
+from object_detection import shape_utils
 
 
 def indices_to_dense_vector(indices,

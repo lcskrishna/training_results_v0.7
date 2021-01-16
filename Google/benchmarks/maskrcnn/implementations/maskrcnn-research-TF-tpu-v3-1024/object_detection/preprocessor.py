@@ -41,7 +41,8 @@ back to rank 4.
 
 import tensorflow.compat.v1 as tf
 
-from REDACTED.mask_rcnn.object_detection import box_list
+#from REDACTED.mask_rcnn.object_detection import box_list
+from object_detection import box_list
 
 
 def _flip_boxes_left_right(boxes):

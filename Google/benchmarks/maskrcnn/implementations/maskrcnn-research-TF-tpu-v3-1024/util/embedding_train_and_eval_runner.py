@@ -42,9 +42,13 @@ Limitations:
 from absl import flags
 import tensorflow.compat.v1 as tf
 
-from REDACTED.tensorflow.python.tpu import tpu_embedding_gradient
-from REDACTED.tensorflow.python.tpu.ops import tpu_ops
-from REDACTED.util import train_and_eval_runner as tr
+#from REDACTED.tensorflow.python.tpu import tpu_embedding_gradient
+#from REDACTED.tensorflow.python.tpu.ops import tpu_ops
+#from REDACTED.util import train_and_eval_runner as tr
+
+from tensorflow.python.tpu import tpu_embedding_gradient
+from tensorflow.python.tpu.ops import tpu_ops
+from util import train_and_eval_runner as tr
 
 FLAGS = flags.FLAGS
 

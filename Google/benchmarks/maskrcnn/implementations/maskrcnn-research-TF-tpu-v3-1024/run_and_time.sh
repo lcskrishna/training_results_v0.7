@@ -1,0 +1,16 @@
+python3 mask_rcnn_main.py \
+ --eval_batch_size=512 \
+ --hparams=first_lr_drop_step=6000,second_lr_drop_step=8000,lr_warmup_step=2000,learning_rate=0.24,shuffle_buffer_size=2048 \
+ --input_partition_dims=1 \
+ --input_partition_dims=8 \
+ --input_partition_dims=1 \
+ --model_dir=${MODEL_DIR} \
+ --num_epochs=1 \
+ --num_shards=8 \
+ --replicas_per_host=1 \
+ --resnet_checkpoint=${RESNET_CHECKPOINT} \
+ --sleep_after_init=200 \
+ --train_batch_size=256 \
+ --training_file_pattern=${TRAIN_FILE_PATTERN} \
+ --val_json_file=${VAL_JSON_FILE} \
+ --validation_file_pattern=${EVAL_FILE_PATTERN} \

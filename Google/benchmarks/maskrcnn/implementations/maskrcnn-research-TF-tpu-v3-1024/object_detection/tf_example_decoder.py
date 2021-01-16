@@ -19,7 +19,8 @@ A decoder to decode string tensors containing serialized tensorflow.Example
 protos for object detection.
 """
 import tensorflow.compat.v1 as tf
-from REDACTED.tensorflow.contrib import slim as contrib_slim
+#from REDACTED.tensorflow.contrib import slim as contrib_slim
+from tensorflow.contrib import slim as contrib_slim
 
 slim_example_decoder = contrib_slim.tfexample_decoder
 

@@ -34,8 +34,10 @@ This is originally implemented in TensorFlow Object Detection API.
 
 import tensorflow.compat.v1 as tf
 
-from REDACTED.mask_rcnn.object_detection import minibatch_sampler
-from REDACTED.mask_rcnn.object_detection import ops
+#from REDACTED.mask_rcnn.object_detection import minibatch_sampler
+#from REDACTED.mask_rcnn.object_detection import ops
+from object_detection import minibatch_sampler
+from object_detection import ops
 
 
 class BalancedPositiveNegativeSampler(minibatch_sampler.MinibatchSampler):

@@ -28,8 +28,10 @@ factory function for popular implementations.
 """
 import tensorflow.compat.v1 as tf
 
-from REDACTED.mask_rcnn.object_detection import matcher
-from REDACTED.mask_rcnn.object_detection import shape_utils
+#from REDACTED.mask_rcnn.object_detection import matcher
+#from REDACTED.mask_rcnn.object_detection import shape_utils
+from object_detection import matcher
+from object_detection import shape_utils
 
 
 class ArgMaxMatcher(matcher.Matcher):

@@ -35,7 +35,8 @@ from abc import abstractmethod
 
 import tensorflow.compat.v1 as tf
 
-from REDACTED.mask_rcnn.object_detection import ops
+#from REDACTED.mask_rcnn.object_detection import ops
+from object_detection import ops
 
 
 class MinibatchSampler(object):

@@ -28,16 +28,24 @@ from absl import flags
 import tensorflow.compat.v1 as tf
 
 # copybara:strip_begin
-from REDACTED import xprof_analysis_client as profiler_client
+#from REDACTED import xprof_analysis_client as profiler_client
 # copybara:strip_end
 
-from REDACTED import rewriter_config_pb2
-from REDACTED.tensorflow.python.tpu import device_assignment
-from REDACTED.tensorflow.python.tpu import tpu
-from REDACTED.tensorflow.python.tpu import tpu_feed
-from REDACTED.tensorflow.python.tpu import tpu_function
-from REDACTED.tensorflow.python.tpu import training_loop
-from REDACTED.tensorflow.python.tpu.ops import tpu_ops
+#from REDACTED import rewriter_config_pb2
+#from REDACTED.tensorflow.python.tpu import device_assignment
+#from REDACTED.tensorflow.python.tpu import tpu
+#from REDACTED.tensorflow.python.tpu import tpu_feed
+#from REDACTED.tensorflow.python.tpu import tpu_function
+#from REDACTED.tensorflow.python.tpu import training_loop
+#from REDACTED.tensorflow.python.tpu.ops import tpu_ops
+
+from tensorflow.core.protobuf import rewriter_config_pb2
+from tensorflow.python.tpu import device_assignment
+from tensorflow.python.tpu import tpu
+from tensorflow.python.tpu import tpu_feed
+from tensorflow.python.tpu import tpu_function
+from tensorflow.python.tpu import training_loop
+from tensorflow.python.tpu.ops import tpu_ops
 
 FLAGS = flags.FLAGS
 _IS_PADDED = "is_padded"
@@ -87,12 +95,20 @@ flags.DEFINE_bool(
     help=("Get xprof traces at"
           "the start and middle of the train loops"))
 
+#_NUM_CORES_TO_COMPUTATION_SHAPE = {
+#    1: [1, 1, 1, 1],
+#    2: [1, 1, 1, 2],
+#    4: [1, 2, 1, 2],
+#    8: [2, 2, 1, 2],
+#    16: [4, 2, 1, 2],
+#}
+
 _NUM_CORES_TO_COMPUTATION_SHAPE = {
-    1: [1, 1, 1, 1],
-    2: [1, 1, 1, 2],
-    4: [1, 2, 1, 2],
-    8: [2, 2, 1, 2],
-    16: [4, 2, 1, 2],
+    1: [1, 1, 1],
+    2: [1, 1, 2],
+    4: [1, 2, 2],
+    8: [2, 2, 2],
+    16: [4, 2, 2],
 }
 
 
@@ -384,11 +400,13 @@ class TrainAndEvalRunner(object):
         operator.mul, input_partition_dims
     ) if input_partition_dims else num_partitions if num_partitions else 1
 
+    print ("************* {}".format(num_cores_per_replica))
     self.device_assignment = device_assignment.device_assignment(
         topology=self.device_topology,
         computation_shape=_NUM_CORES_TO_COMPUTATION_SHAPE[
             num_cores_per_replica],
         num_replicas=self.num_replicas)
+    print (self.device_assignment)
     self.train_batch_size = train_batch_size
     self.eval_batch_size = eval_batch_size
     self.eval_has_labels = eval_has_labels
@@ -507,6 +525,7 @@ class TrainAndEvalRunner(object):
     with self.graph.as_default():
       _ = tf.train.get_or_create_global_step()
       if init_fn:
+        print ("INFO: Entering the init function.")
         init_fn()
       checkpoint_path = tf.train.latest_checkpoint(
           FLAGS.model_dir) if FLAGS.model_dir else None
